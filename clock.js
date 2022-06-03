@@ -4,7 +4,7 @@ const date = document.querySelector(`.content h2`);
 const day = document.querySelector(`.content h3`);
 async function get() {
   const response = await fetch(
-    "https://worldtimeapi.org/api/timezone/Africa/Cairo"
+    "http://worldtimeapi.org/api/timezone/Africa/Cairo"
   );
   const data = await response.json();
   time.innerHTML = data.datetime.slice(11, 16);
